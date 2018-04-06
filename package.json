@@ -1,0 +1,57 @@
+{
+  "name": "gtk.css",
+  "version": "0.0.0",
+  "homepage": "https://github.com/thosakwe/gtk.css",
+  "author": "Tobe Osakwe <thosakwe@gmail.com> (https://thosakwe.com)",
+  "description": "A CSS framework based on GTK+.",
+  "main": "gtk.sass",
+  "style": "gtk/css/gtk.css",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thosakwe/gtk.css.git"
+  },
+  "license": "MIT",
+  "keywords": [
+    "css",
+    "sass",
+    "gtk+",
+    "gtk",
+    "desktop",
+    "ui",
+    "responsive",
+    "framework"
+  ],
+  "bugs": {
+    "url": "https://github.com/thosakwe/gtk.css/issues"
+  },
+  "devDependencies": {
+    "autoprefixer": "^7.1.1",
+    "jquery": "^3.3.1",
+    "node-sass": "^4.5.3",
+    "page": "github:visionmedia/page.js",
+    "postcss-cli": "^4.1.0",
+    "rimraf": "^2.6.1"
+  },
+  "scripts": {
+    "build": "npm run build-clean && npm run build-sass && npm run build-autoprefix",
+    "build-autoprefix": "postcss --use autoprefixer --map false --output css/gtk.css css/gtk.css",
+    "build-clean": "rimraf css",
+    "build-sass": "node-sass --output-style expanded --source-map true gtk.sass css/gtk.css",
+    "deploy": "npm run build && npm run docs",
+    "docs": "npm run docs-sass && npm run docs-autoprefix",
+    "docs-autoprefix": "postcss --use autoprefixer --map false --output docs/css/gtk-docs.css docs/css/gtk-docs.css",
+    "docs-sass": "node-sass --output-style expanded docs/gtk-docs.sass docs/css/gtk-docs.css",
+    "start": "npm run build-sass -- --watch",
+    "start-docs": "npm run docs-sass -- --watch",
+    "start-test": "npm run test-sass -- --watch",
+    "test-sass": "node-sass --output-style expanded docs/gtk-test.sass docs/css/gtk-test.css",
+    "test-scss": "node-sass --output-style expanded docs/gtk-test.scss docs/css/gtk-test.css"
+  },
+  "files": [
+    "css",
+    "sass",
+    "gtk.sass",
+    "LICENSE",
+    "README.md"
+  ]
+}

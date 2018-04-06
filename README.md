@@ -1,2 +1,2 @@
 # gtk.css
-A CSS framework based on GTK.
+A CSS framework based on GTK+.
