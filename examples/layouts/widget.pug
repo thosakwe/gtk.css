@@ -2,3 +2,12 @@ extends master
 
 block append head
     link(rel='stylesheet' href='../../css/gtk.css')
+    link(rel='stylesheet' href='../../node_modules/highlight.js/styles/vs2015.css')
+    script(src='../../node_modules/highlight.js/lib/highlight.js')
+    script(src='../../node_modules/highlight.js/lib/languages/css.js')
+    script(src='../../node_modules/highlight.js/lib/languages/html.js')
+    script(src='../../node_modules/highlight.js/lib/languages/javascript.js')
+
+block append body
+    script.
+          hljs.initHighlightingOnLoad();

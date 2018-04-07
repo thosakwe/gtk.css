@@ -26,6 +26,7 @@
   },
   "devDependencies": {
     "autoprefixer": "^7.1.1",
+    "highlight.js": "^9.12.0",
     "jquery": "^3.3.1",
     "node-sass": "^4.5.3",
     "page": "github:visionmedia/page.js",
@@ -39,7 +40,7 @@
     "build-clean": "rimraf css",
     "build-sass": "node-sass --output-style expanded --source-map true gtk.sass css/gtk.css",
     "deploy": "npm run build && npm run docs",
-    "examples": "pug -w examples",
+    "examples": "pug -w -P examples",
     "docs": "npm run docs-sass && npm run docs-autoprefix",
     "docs-autoprefix": "postcss --use autoprefixer --map false --output docs/css/gtk-docs.css docs/css/gtk-docs.css",
     "docs-sass": "node-sass --output-style expanded docs/gtk-docs.sass docs/css/gtk-docs.css",
@@ -48,7 +49,7 @@
     "start-test": "npm run test-sass -- --watch",
     "test-sass": "node-sass --output-style expanded docs/gtk-test.sass docs/css/gtk-test.css",
     "test-scss": "node-sass --output-style expanded docs/gtk-test.scss docs/css/gtk-test.css",
-    "watch": "node-sass --output css gtk.sass && node-sass --output css --watch gtk.sass"
+    "watch": "node-sass --output css gtk.sass && node-sass --output css/gtk.sass --watch gtk.sass"
   },
   "files": [
     "css",
