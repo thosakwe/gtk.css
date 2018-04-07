@@ -103,8 +103,8 @@ a {
   display: flex;
   flex-direction: row;
   height: 40px;
+  padding: 0 1em;
   text-align: center;
-  width: 100%;
 }
 
 .gtk.header.bar .title {
