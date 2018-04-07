@@ -1,0 +1,16 @@
+extends ../layouts/widget
+
+block append head
+    title Entry
+
+block append body
+    h1 Entry
+    pre
+        code.xml
+            = '<input class="gtk entry" placeholder="Type something..." type="text">'
+    br
+    .gtk.window.has-header(style='width: fit-content; height: initial;')
+        .gtk.header.bar
+            .title Entry
+        div(style='padding: 1em')
+            input(class='gtk entry' placeholder='Type something...' type='text')
