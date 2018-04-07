@@ -1,58 +1,35 @@
 /* Colors */
 /* Border */
 /* Text */
-.gtk {
-  font-family: "Cantarell", monospace, "Sans", "Monospace", "Serif";
-}
-
 /* Colors */
 /* Border */
 /* Text */
 .gtk {
-  font-family: "Cantarell", monospace, "Sans", "Monospace", "Serif";
+  font-family: "Bitstream Vera Sans", "Cantarell", monospace, "Sans", "Monospace", "Serif";
+  font-size: 14px;
 }
 
-.gtk.header.bar {
-  background: linear-gradient(#fcfcfc, #ededed);
-  border-bottom: 1px solid #969a96;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-  display: flex;
-  flex-direction: row;
-  height: 40px;
-  text-align: center;
-  width: 100%;
-}
-
-.gtk.header.bar .title {
-  color: #2e3436;
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
-  font-weight: bold;
-  user-select: none;
-}
-
-.gtk.header.bar .title .subtitle {
+.subtitle {
   color: #8c8f90;
-  font-size: 0.75em;
+  font-size: 0.8em;
   font-weight: normal;
 }
 
 /* Colors */
 /* Border */
 /* Text */
-.gtk {
-  font-family: "Cantarell", monospace, "Sans", "Monospace", "Serif";
+a {
+  color: #4a90d9;
 }
 
 .gtk.window {
   background-color: #ededed;
-  border: 1px solid #969a96;
+  border: 1px solid black;
   box-shadow: 5px 5px 15px #969a96;
 }
 
 .gtk.window.has-header {
+  border-color: #969a96;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
 }

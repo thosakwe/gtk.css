@@ -1,7 +1,12 @@
 extends layouts/master
 block content
-    ul
-        li
-            a(href='widgets/header_bar.html') Header Bar
-        li
-            a(href='widgets/window.html') Window
+    .gtk.window.has-header
+        .gtk.header.bar
+            .title GTK.css Examples
+        ul
+            li
+                a(href='widgets/button.html') Button
+            li
+                a(href='widgets/header_bar.html') Header Bar
+            li
+                a(href='widgets/window.html') Window
