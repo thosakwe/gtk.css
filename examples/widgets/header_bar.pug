@@ -8,8 +8,14 @@ block content
     pre
         code.xml.
             &lt;div class="gtk window has-header" style="background-color: white; width: 600px; height: 400px;">
-                &lt;header class="gtk header bar"></header>
-            </div>
+                &lt;header class="gtk header bar">
+                    &lt;div class="title">
+                        &lt;div class="subtitle">(subtitle)&lt;/div>
+                    &lt;/div>
+                &lt;/header>
+            &lt;/div>
     br
     .gtk.window.has-header(style="background-color: white;")
         header.gtk.header.bar
+            .title Header Bar
+                .subtitle (subtitle)

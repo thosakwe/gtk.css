@@ -1,13 +1,15 @@
 /* Colors */
-/* Variables */
+/* Border */
+/* Text */
 .gtk {
-  font-family: "Sans", "Monospace", "Serif";
+  font-family: "Cantarell", monospace, "Sans", "Monospace", "Serif";
 }
 
 /* Colors */
-/* Variables */
+/* Border */
+/* Text */
 .gtk {
-  font-family: "Sans", "Monospace", "Serif";
+  font-family: "Cantarell", monospace, "Sans", "Monospace", "Serif";
 }
 
 .gtk.header.bar {
@@ -15,20 +17,39 @@
   border-bottom: 1px solid #969a96;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
+  display: flex;
+  flex-direction: row;
   height: 40px;
+  text-align: center;
   width: 100%;
 }
 
+.gtk.header.bar .title {
+  color: #2e3436;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  font-weight: bold;
+  user-select: none;
+}
+
+.gtk.header.bar .title .subtitle {
+  color: #8c8f90;
+  font-size: 0.75em;
+  font-weight: normal;
+}
+
 /* Colors */
-/* Variables */
+/* Border */
+/* Text */
 .gtk {
-  font-family: "Sans", "Monospace", "Serif";
+  font-family: "Cantarell", monospace, "Sans", "Monospace", "Serif";
 }
 
 .gtk.window {
   background-color: #ededed;
   border: 1px solid #969a96;
-  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+  box-shadow: 5px 5px 15px #969a96;
 }
 
 .gtk.window.has-header {

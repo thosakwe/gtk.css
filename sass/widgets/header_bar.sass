@@ -5,5 +5,21 @@
   border-bottom: 1px solid $border-color
   border-top-left-radius: 5px
   border-top-right-radius: 5px
+  display: flex
+  flex-direction: row
   height: 40px
+  text-align: center
   width: 100%
+
+  .title
+    color: $title-color
+    display: flex
+    flex-direction: column
+    flex-grow: 1
+    font-weight: bold
+    user-select: none
+
+    .subtitle
+      color: $subtitle-color
+      font-size: 0.75em
+      font-weight: normal
