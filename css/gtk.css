@@ -237,10 +237,68 @@ a {
   color: #4a90d9;
 }
 
+.gtk.stack.sidebar {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+}
+
+.gtk.stack.sidebar .content {
+  flex: 4;
+}
+
+.gtk.stack.sidebar .sidebar {
+  border-right: 1px solid #969a96;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+.gtk.stack.sidebar .sidebar .item {
+  cursor: pointer;
+  padding: 1em;
+}
+
+.gtk.stack.sidebar .sidebar .item:not(:last-of-type) {
+  border-bottom: 1px solid #969a96;
+}
+
+.gtk.stack.sidebar .sidebar .item.active {
+  background-color: #4a90d9;
+  color: #ffffff;
+}
+
+/* Colors */
+/* Border */
+/* Text */
+/* Colors */
+/* Border */
+/* Text */
+.gtk {
+  color: #2e3436;
+  font-family: "Bitstream Vera Sans", "Cantarell", monospace, "Sans", "Monospace", "Serif";
+  font-size: 14px;
+}
+
+.subtitle {
+  color: #8c8f90;
+  font-size: 0.8em;
+  font-weight: normal;
+}
+
+/* Colors */
+/* Border */
+/* Text */
+a {
+  color: #4a90d9;
+}
+
 .gtk.window {
   background-color: #ededed;
   border: 1px solid black;
   box-shadow: 3px 3px 15px #969a96;
+  display: flex;
+  flex-direction: column;
 }
 
 .gtk.window.has-header {

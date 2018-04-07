@@ -1,0 +1,26 @@
+@import "../utilities/_all"
+
+.gtk.stack.sidebar
+  background-color: $white
+  display: flex
+  flex-direction: row
+
+  .content
+    flex: 4
+
+  .sidebar
+    border-right: 1px solid $border-color
+    display: flex
+    flex: 1
+    flex-direction: column
+
+    .item
+      cursor: pointer
+      padding: 1em
+
+      &:not(:last-of-type)
+        border-bottom: 1px solid $border-color
+
+      &.active
+        background-color: $primary-color
+        color: $white
