@@ -3,8 +3,27 @@ extends ../layouts/widget
 block append head
     title Radio Button
 
-block body
+block append body
     h1 Radio Button
+    pre
+        code.xml.
+            &lt;div style="padding: 1em;">
+                &lt;header class="gtk radio button">
+                    &lt;input type="radio">
+                    &lt;span class="checkmark">&lt;/span>
+                    &lt;label>Radio Button One&lt;/label>
+                &lt;/header>
+                &lt;header class="gtk radio button">
+                    &lt;input type="radio">
+                    &lt;span class="checkmark">&lt;/span>
+                    &lt;label>Radio Button Two&lt;/label>
+                &lt;/header>
+                &lt;header class="gtk radio button">
+                    &lt;input type="radio">
+                    &lt;span class="checkmark">&lt;/span>
+                    &lt;label>Radio Button Three&lt;/label>
+                &lt;/header>
+            &lt;/div>
     .gtk.window.has-header(style='width: fit-content; height: initial;')
         .gtk.header.bar
             .title Radio Button

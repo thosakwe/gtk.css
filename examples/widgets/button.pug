@@ -3,8 +3,12 @@ extends ../layouts/widget
 block append head
     title Button
 
-block body
+block append body
     h1 Button
+    pre
+        code.xml
+            = '<button class="gtk button">Click me!</button>'
+    br
     .gtk.window.has-header(style='width: fit-content; height: initial;')
         .gtk.header.bar
             .title Button
