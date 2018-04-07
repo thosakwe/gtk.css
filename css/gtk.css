@@ -49,6 +49,7 @@ a {
 }
 
 .gtk.button:not(.radio) {
+  background: -webkit-gradient(linear, left top, left bottom, from(#fcfcfc), to(#ededed));
   background: linear-gradient(#fcfcfc, #ededed);
   border: 1px solid #babdba;
   border-radius: 3px;
@@ -57,6 +58,7 @@ a {
 }
 
 .gtk.button:not(.radio).primary {
+  background: -webkit-gradient(linear, left top, left bottom, from(#abd0f6), color-stop(#79a6d1), to(#abd0f6));
   background: linear-gradient(#abd0f6, #79a6d1, #abd0f6);
   border: 1px solid #52606e;
 }
@@ -101,6 +103,7 @@ a {
 }
 
 .gtk.entry {
+  background: -webkit-gradient(linear, left top, left bottom, from(#ededed), to(#ffffff));
   background: linear-gradient(#ededed, #ffffff);
   border: 1px solid #969a96;
   border-radius: 3px;
@@ -138,12 +141,18 @@ a {
 }
 
 .gtk.header.bar {
+  background: -webkit-gradient(linear, left top, left bottom, from(#fcfcfc), to(#ededed));
   background: linear-gradient(#fcfcfc, #ededed);
   border-bottom: 1px solid #969a96;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   height: 40px;
   padding: 0 1em;
   text-align: center;
@@ -151,12 +160,24 @@ a {
 
 .gtk.header.bar .title {
   color: #2e3436;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  flex-grow: 1;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   font-weight: bold;
-  justify-content: center;
-  user-select: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 /* Colors */
@@ -185,6 +206,8 @@ a {
 }
 
 .gtk.radio.button {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -195,15 +218,20 @@ a {
 }
 
 .gtk.radio.button input[type='radio']:checked ~ .checkmark {
+  background: -webkit-gradient(linear, left top, left bottom, from(#b4cce5), to(#83a8d1));
   background: linear-gradient(#b4cce5, #83a8d1);
   border: 1px solid #3a6aa6;
 }
 
 .gtk.radio.button label {
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .gtk.radio.button .checkmark {
+  background: -webkit-gradient(linear, left top, left bottom, from(#fcfcfc), to(#ededed));
   background: linear-gradient(#fcfcfc, #ededed);
   border: 1px solid #969a96;
   border-radius: 50%;
@@ -239,19 +267,33 @@ a {
 
 .gtk.stack.sidebar {
   background-color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 .gtk.stack.sidebar .content {
-  flex: 4;
+  -webkit-box-flex: 4;
+      -ms-flex: 4;
+          flex: 4;
 }
 
 .gtk.stack.sidebar .sidebar {
   border-right: 1px solid #969a96;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex: 1;
-  flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .gtk.stack.sidebar .sidebar .item {
@@ -296,9 +338,15 @@ a {
 .gtk.window {
   background-color: #ededed;
   border: 1px solid black;
-  box-shadow: 3px 3px 15px #969a96;
+  -webkit-box-shadow: 3px 3px 15px #969a96;
+          box-shadow: 3px 3px 15px #969a96;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .gtk.window.has-header {
@@ -306,5 +354,4 @@ a {
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
 }
-
 /*# sourceMappingURL=gtk.css.map */
