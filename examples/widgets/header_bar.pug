@@ -1,0 +1,15 @@
+extends ../layouts/widget
+
+block append head
+    title Header Bar
+
+block content
+    h1 Header Bar
+    pre
+        code.xml.
+            &lt;div class="gtk window has-header" style="background-color: white; width: 600px; height: 400px;">
+                &lt;header class="gtk header bar"></header>
+            </div>
+    br
+    .gtk.window.has-header(style="background-color: white;")
+        header.gtk.header.bar
