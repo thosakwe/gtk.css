@@ -67,3 +67,4 @@ typings/
 *.iml
 
 examples/**/*.html
+css/*.sass
