@@ -22,16 +22,129 @@ a {
   color: #4a90d9;
 }
 
+/* Colors */
+/* Border */
+/* Text */
+/* Colors */
+/* Border */
+/* Text */
+.gtk {
+  font-family: "Bitstream Vera Sans", "Cantarell", monospace, "Sans", "Monospace", "Serif";
+  font-size: 14px;
+}
+
+.subtitle {
+  color: #8c8f90;
+  font-size: 0.8em;
+  font-weight: normal;
+}
+
+/* Colors */
+/* Border */
+/* Text */
+a {
+  color: #4a90d9;
+}
+
+.gtk.button {
+  background: linear-gradient(#fcfcfc, #ededed);
+  border: 1px solid #babdba;
+  border-radius: 3px;
+  cursor: pointer;
+  padding: 8px;
+}
+
+.gtk.button:focus {
+  background: #c7d1db;
+  border-color: #79a6d1;
+  outline: none;
+}
+
+.gtk.button:hover:not(:focus) {
+  background: #ffffff;
+  border-color: #969a96;
+}
+
+/* Colors */
+/* Border */
+/* Text */
+/* Colors */
+/* Border */
+/* Text */
+.gtk {
+  font-family: "Bitstream Vera Sans", "Cantarell", monospace, "Sans", "Monospace", "Serif";
+  font-size: 14px;
+}
+
+.subtitle {
+  color: #8c8f90;
+  font-size: 0.8em;
+  font-weight: normal;
+}
+
+/* Colors */
+/* Border */
+/* Text */
+a {
+  color: #4a90d9;
+}
+
+.gtk.header.bar {
+  background: linear-gradient(#fcfcfc, #ededed);
+  border-bottom: 1px solid #969a96;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  height: 40px;
+  text-align: center;
+  width: 100%;
+}
+
+.gtk.header.bar .title {
+  color: #2e3436;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  font-weight: bold;
+  justify-content: center;
+  user-select: none;
+}
+
+/* Colors */
+/* Border */
+/* Text */
+/* Colors */
+/* Border */
+/* Text */
+.gtk {
+  font-family: "Bitstream Vera Sans", "Cantarell", monospace, "Sans", "Monospace", "Serif";
+  font-size: 14px;
+}
+
+.subtitle {
+  color: #8c8f90;
+  font-size: 0.8em;
+  font-weight: normal;
+}
+
+/* Colors */
+/* Border */
+/* Text */
+a {
+  color: #4a90d9;
+}
+
 .gtk.window {
   background-color: #ededed;
   border: 1px solid black;
-  box-shadow: 5px 5px 15px #969a96;
+  box-shadow: 3px 3px 15px #969a96;
 }
 
 .gtk.window.has-header {
   border-color: #969a96;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
 }
 
 /*# sourceMappingURL=gtk.css.map */

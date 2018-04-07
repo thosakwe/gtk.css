@@ -5,7 +5,8 @@ block append head
 
 block body
     h1 Button
-    .gtk.window.has-header(style="background: white")
+    .gtk.window.has-header(style='width: fit-content; height: initial;')
         .gtk.header.bar
             .title Button
-        button.gtk.button
+        div(style='padding: 1em')
+            button.gtk.button Click me!
