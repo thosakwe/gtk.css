@@ -26,7 +26,6 @@
   },
   "devDependencies": {
     "autoprefixer": "^7.1.1",
-    "highlight.js": "^9.12.0",
     "jquery": "^3.3.1",
     "node-sass": "^4.5.3",
     "page": "github:visionmedia/page.js",
