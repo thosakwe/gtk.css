@@ -7,10 +7,15 @@ block append body
     h1 Button
     pre
         code.xml
-            = '<button class="gtk button">Click me!</button>'
+            = '<button class="gtk button">Cancel/button>\n'
+            = '<button class="gtk button primary">OK</button>'
     br
     .gtk.window.has-header(style='width: fit-content; height: initial;')
         .gtk.header.bar
             .title Button
-        div(style='padding: 1em')
-            button.gtk.button Click me!
+        div(style='padding: 1em; text-align: center')
+            | Really perform this action?
+            br
+            br
+            button.gtk.button Cancel
+            button.gtk.button.primary OK

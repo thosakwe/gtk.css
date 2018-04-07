@@ -56,8 +56,13 @@ a {
   padding: 8px;
 }
 
+.gtk.button:not(.radio).primary {
+  background: linear-gradient(#abd0f6, #79a6d1, #abd0f6);
+  border: 1px solid #52606e;
+}
+
 .gtk.button:not(.radio):active, .gtk.button:not(.radio):focus {
-  background: #c7d1db;
+  background: #abd0f6;
   border-color: #79a6d1;
 }
 
@@ -65,7 +70,7 @@ a {
   outline: none;
 }
 
-.gtk.button:not(.radio):hover:not(:focus) {
+.gtk.button:not(.radio):hover:not(:focus):not(.primary) {
   background: #ffffff;
   border-color: #969a96;
 }

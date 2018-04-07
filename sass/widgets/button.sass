@@ -7,13 +7,17 @@
   cursor: pointer
   padding: 8px
 
+  &.primary
+    background: linear-gradient(#abd0f6, $focus-color, $primary-color)
+    border: 1px solid $primary-border-color
+
   &:active,&:focus
-    background: #c7d1db
+    background: $primary-color
     border-color: $focus-color
 
   &:focus
     outline: none
 
-  &:hover:not(:focus)
+  &:hover:not(:focus):not(.primary)
     background: $white
     border-color: $border-color
