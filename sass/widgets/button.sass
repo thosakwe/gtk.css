@@ -1,15 +1,17 @@
 @import "../utilities/_all"
 
-.gtk.button
+.gtk.button:not(.radio)
   background: linear-gradient($lightGrey, $grey)
   border: 1px solid $light-border-color
   border-radius: $border-radius
   cursor: pointer
   padding: 8px
 
-  &:focus
+  &:active,&:focus
     background: #c7d1db
     border-color: #79a6d1
+
+  &:focus
     outline: none
 
   &:hover:not(:focus)

@@ -1,0 +1,25 @@
+extends ../layouts/widget
+
+block append head
+    title Radio Button
+
+block body
+    h1 Radio Button
+    .gtk.window.has-header(style='width: fit-content; height: initial;')
+        .gtk.header.bar
+            .title Radio Button
+        div(style='padding: 1em')
+            .gtk.radio.button
+                input(class="gtk radio button" name='radio' type='radio' checked)
+                span.checkmark
+                label Radio Button One
+            br
+            .gtk.radio.button
+                input(class="gtk radio button" name='radio' type='radio')
+                span.checkmark
+                label Radio Button Two
+            br
+            .gtk.radio.button
+                input(class="gtk radio button" name='radio' type='radio')
+                span.checkmark
+                label Radio Button Three

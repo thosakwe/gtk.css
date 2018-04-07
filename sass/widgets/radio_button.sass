@@ -1,0 +1,24 @@
+@import "../utilities/_all"
+
+.gtk.radio.button
+  display: flex
+
+  input[type='radio']
+    cursor: pointer
+    position: absolute
+    opacity: 0
+
+    &:checked ~ .checkmark
+      background: linear-gradient(#b4cce5, #83a8d1)
+      border: 1px solid #3a6aa6
+
+  label
+    user-select: none
+
+  .checkmark
+    background: linear-gradient($lightGrey, $grey)
+    border: 1px solid $border-color
+    border-radius: 50%
+    width: 1em
+    height: 1em
+    margin-right: 1em
