@@ -30,6 +30,7 @@
     "node-sass": "^4.5.3",
     "page": "github:visionmedia/page.js",
     "postcss-cli": "^4.1.0",
+    "pug-cli": "^1.0.0-alpha6",
     "rimraf": "^2.6.1"
   },
   "scripts": {
