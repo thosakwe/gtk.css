@@ -9,6 +9,18 @@ block append head
 
 block append body
     h1 Stack Sidebar
+    pre
+        code.xml.
+            &lt;div class="gtk stack sidebar">
+                &lt;div class="sidebar">
+                    &lt;div class="active item">Page 1&lt;/div>
+                    &lt;div class="item">Page 2&lt;/div>
+                    &lt;div class="item">Page 3&lt;/div>
+                    &lt;div class="item">Page 4&lt;/div>
+                &lt;/div>
+                &lt;div class="content">Lorem ipsum...&lt;/div>
+            &lt;/div>
+    br
     .gtk.window.has-header(style='height: initial;')
         .gtk.header.bar
             .title Terms of Service
