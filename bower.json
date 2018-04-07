@@ -1,0 +1,20 @@
+{
+  "name": "gtk.css",
+  "description": "A CSS framework based on GTK+.",
+  "main": "gtk.sass",
+  "authors": [
+    "Tobe Osakwe <thosakwe@gmail.com> (https://thosakwe.com)"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "css",
+    "sass",
+    "gtk+",
+    "gtk",
+    "desktop",
+    "ui",
+    "responsive",
+    "framework"
+  ],
+  "homepage": "https://github.com/thosakwe/gtk.css"
+}
